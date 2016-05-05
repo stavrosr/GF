@@ -1,0 +1,6 @@
+C:\Users\srousopo\Documents\Visual Studio 2013\Projects\GF\GF\bin\GF.dll.config
+C:\Users\srousopo\Documents\Visual Studio 2013\Projects\GF\GF\bin\GF.dll
+C:\Users\srousopo\Documents\Visual Studio 2013\Projects\GF\GF\bin\GF.pdb
+C:\Users\srousopo\Documents\Visual Studio 2013\Projects\GF\GF\obj\Debug\GF.csprojResolveAssemblyReference.cache
+C:\Users\srousopo\Documents\Visual Studio 2013\Projects\GF\GF\obj\Debug\GF.dll
+C:\Users\srousopo\Documents\Visual Studio 2013\Projects\GF\GF\obj\Debug\GF.pdb

@@ -1,0 +1,151 @@
+﻿@Color1: #003056;
+@Color2: #04518C;
+@Color3: #00A1D9;
+@Color4: #47D9BF;
+@Color5: #F2D03B;
+@CardColor: #ffffff;
+@CardBackColor: @Color4;
+@BorderColor: @Color2;
+
+body {
+    font-family: Calibri;
+    background-color: @Color2;
+    margin: 0;
+
+    #MainArea {
+        width: 312px;
+        margin: 0 auto;
+        height: 100%;
+        min-height: 460px;
+        display: table;
+        border: solid 4px @Color2;
+
+        > div {
+            display: none;
+        }
+
+        > div.Active {
+            display: block;
+        }
+
+        #TitleArea {
+            background: url('../images/Title.png') @Color2 no-repeat;
+            height: 100%;
+
+            #PlayButton {
+                position: fixed;
+                top: 400px;
+                left: 50%;
+                margin-left: -12px;
+                width: 25px;
+                height: 30px;
+                background: url('../images/Play.png') no-repeat;
+                cursor: pointer;
+
+                &:hover, &:active {
+                    background: url('../images/Play_Over.png');
+                }
+            }
+        }
+
+        #GameArea {
+            background-color: @Color3;
+            padding: 4px;
+            height: 100%;
+        }
+    }
+}
+
+.Hand {
+    .Card {
+        font-size: .85em;
+        float: left;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        border: solid 1px @Color2;
+        border-radius: 4px;
+        height: 56px;
+        width: 32px;
+        background-color: @CardColor;
+        font-size: .67em;
+        padding-left: 4px;
+        font-weight: bold;
+        color: @Color2;
+        box-shadow: 2px 2px 4px;
+        cursor: pointer;
+
+        &.Card1 {
+            background-image: url(../images/Card1.png);
+        }
+        &.Card2 {
+            background-image: url(../images/Card2.png);
+        }
+        &.Card3 {
+            background-image: url(../images/Card3.png);
+        }
+        &.Card4 {
+            background-image: url(../images/Card4.png);
+        }
+        &.Card5 {
+            background-image: url(../images/Card5.png);
+        }
+        &.Card6 {
+            background-image: url(../images/Card6.png);
+        }
+        &.Card7 {
+            background-image: url(../images/Card7.png);
+        }
+        &.Card8 {
+            background-image: url(../images/Card8.png);
+        }
+        &.Card9 {
+            background-image: url(../images/Card9.png);
+        }
+        &.Card10 {
+            background-image: url(../images/Card10.png);
+        }
+
+        &:hover {
+            background-color: #eeeeee;
+        }
+    }
+    &#ComputerHand .Card {
+        background-color: @CardBackColor;
+    }
+}
+h3 {
+    clear: left;
+    margin-top: 0;
+}
+
+.ButtonRow {
+    text-align: center;
+    padding: 8px;
+}
+.Button {
+    background-color: @Color2;
+    color: #ffffff;
+    padding: 4px 8px;
+    display: inline-block;
+    cursor: pointer;
+
+    .3d(@Color2);
+}
+
+.3d(@BorderColor){
+    border-top: 1px solid @BorderColor;
+    border-right: 1px solid @BorderColor;
+    border-bottom: 1px solid @BorderColor;
+    border-left: 1px solid @BorderColor;
+
+    &:hover {
+    border-right: 1px solid darken(@BorderColor, 15%);
+    border-bottom: 1px solid darken(@BorderColor, 15%);
+    }
+    &:active {
+    border-top: 1px solid darken(@BorderColor, 15%);
+    border-left: 1px solid darken(@BorderColor, 15%);
+    border-right: 1px solid @BorderColor;
+    border-bottom: 1px solid @BorderColor;
+    }
+}

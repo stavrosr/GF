@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="GFApp">
+<head>
+    <title>Go Fish</title>
+    <meta property="og:title" itemprop="name" content="Go Fish" />
+    <meta property="og:image" content="https://rousopoulos.com/gf/images/title.png" />
+    <link itemprop="image" href="//rousopoulos.com/gf/images/title.png" rel="icon" />
+    <meta property="og:url" content="//rousopoulos.com/gf/default.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="rousopoulos.com" />
+    <meta property="og:description" itemprop="description" content="This is Steve's Go Fish game" />
+    <meta name="description" content="This is Steve's Go Fish game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/controllers.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="ControllerArea" ng-controller="GFCtrl">
+        <div id="MainArea">
+            <div id="TitleArea" ng-class="{Active: Page === 'Home'}">
+                <div ng-click="Play();" id="PlayButton"></div>
+            </div>
+            <div id="GameArea" ng-class="{Active: Page === 'GameOn'}">
+                <h3>Computer Hand</h3>
+                <div id="ComputerHand" class="Hand">
+                    <div class="Card" ng-repeat="Card in ComputerHand" data-value="{{ Card.Value }} {{ Card.Suit }}">
+                    </div>
+                </div>
+                <h3>Player Hand</h3>
+                <div id="PlayerHand" class="Hand">
+                    <div class="Card Card{{ Card.Value }}" ng-repeat="Card in PlayerHand" ng-click="AskFor(Card.Value);">
+                        {{ Card.Value }}
+                    </div>
+                </div>
+                <h3>Message:</h3>
+                <div>{{ Message }}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

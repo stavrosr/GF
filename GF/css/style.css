@@ -1,0 +1,125 @@
+body {
+  font-family: Calibri;
+  background-color: #04518c;
+  margin: 0;
+}
+body #MainArea {
+  width: 312px;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 460px;
+  display: table;
+  border: solid 4px #04518c;
+}
+body #MainArea > div {
+  display: none;
+}
+body #MainArea > div.Active {
+  display: block;
+}
+body #MainArea #TitleArea {
+  background: url('../images/Title.png') #04518c no-repeat;
+  height: 100%;
+}
+body #MainArea #TitleArea #PlayButton {
+  position: fixed;
+  top: 400px;
+  left: 50%;
+  margin-left: -12px;
+  width: 25px;
+  height: 30px;
+  background: url('../images/Play.png') no-repeat;
+  cursor: pointer;
+}
+body #MainArea #TitleArea #PlayButton:hover,
+body #MainArea #TitleArea #PlayButton:active {
+  background: url('../images/Play_Over.png');
+}
+body #MainArea #GameArea {
+  background-color: #00a1d9;
+  padding: 4px;
+  height: 100%;
+}
+.Hand .Card {
+  font-size: .85em;
+  float: left;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: solid 1px #04518c;
+  border-radius: 4px;
+  height: 56px;
+  width: 32px;
+  background-color: #ffffff;
+  font-size: .67em;
+  padding-left: 4px;
+  font-weight: bold;
+  color: #04518c;
+  box-shadow: 2px 2px 4px;
+  cursor: pointer;
+}
+.Hand .Card.Card1 {
+  background-image: url(../images/Card1.png);
+}
+.Hand .Card.Card2 {
+  background-image: url(../images/Card2.png);
+}
+.Hand .Card.Card3 {
+  background-image: url(../images/Card3.png);
+}
+.Hand .Card.Card4 {
+  background-image: url(../images/Card4.png);
+}
+.Hand .Card.Card5 {
+  background-image: url(../images/Card5.png);
+}
+.Hand .Card.Card6 {
+  background-image: url(../images/Card6.png);
+}
+.Hand .Card.Card7 {
+  background-image: url(../images/Card7.png);
+}
+.Hand .Card.Card8 {
+  background-image: url(../images/Card8.png);
+}
+.Hand .Card.Card9 {
+  background-image: url(../images/Card9.png);
+}
+.Hand .Card.Card10 {
+  background-image: url(../images/Card10.png);
+}
+.Hand .Card:hover {
+  background-color: #eeeeee;
+}
+.Hand#ComputerHand .Card {
+  background-color: #47d9bf;
+}
+h3 {
+  clear: left;
+  margin-top: 0;
+}
+.ButtonRow {
+  text-align: center;
+  padding: 8px;
+}
+.Button {
+  background-color: #04518c;
+  color: #ffffff;
+  padding: 4px 8px;
+  display: inline-block;
+  cursor: pointer;
+  border-top: 1px solid #04518c;
+  border-right: 1px solid #04518c;
+  border-bottom: 1px solid #04518c;
+  border-left: 1px solid #04518c;
+}
+.Button:hover {
+  border-right: 1px solid #022642;
+  border-bottom: 1px solid #022642;
+}
+.Button:active {
+  border-top: 1px solid #022642;
+  border-left: 1px solid #022642;
+  border-right: 1px solid #04518c;
+  border-bottom: 1px solid #04518c;
+}
+/*# sourceMappingURL=style.css.map */
